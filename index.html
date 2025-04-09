@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مواقيت الصلاة - مصر</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="prayer-widget">
+    <h1>مواقيت الصلاة في مصر</h1>
+    <select id="city" class="city-select">
+      <option value="Cairo">القاهرة</option>
+      <option value="Alexandria">الإسكندرية</option>
+      <option value="Giza">الجيزة</option>
+      <option value="Sharm El-Sheikh">شرم الشيخ</option>
+      <option value="Luxor">الأقصر</option>
+      <option value="Aswan">أسوان</option>
+    </select>
+    <div class="date" id="date"></div>
+    <div class="prayer-times">
+      <div class="prayer-time" id="fajr">
+        <i class="fas fa-sun icon"></i><span>الفجر</span><span id="fajr-time"></span>
+      </div>
+      <div class="prayer-time" id="sunrise">
+        <i class="fas fa-sun icon"></i><span>الشروق</span><span id="sunrise-time"></span>
+      </div>
+      <div class="prayer-time" id="dhuhr">
+        <i class="fas fa-cloud-sun icon"></i><span>الظهر</span><span id="dhuhr-time"></span>
+      </div>
+      <div class="prayer-time" id="asr">
+        <i class="fas fa-sun icon"></i><span>العصر</span><span id="asr-time"></span>
+      </div>
+      <div class="prayer-time" id="maghrib">
+        <i class="fas fa-sunset icon"></i><span>المغرب</span><span id="maghrib-time"></span>
+      </div>
+      <div class="prayer-time" id="isha">
+        <i class="fas fa-moon icon"></i><span>العشاء</span><span id="isha-time"></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
